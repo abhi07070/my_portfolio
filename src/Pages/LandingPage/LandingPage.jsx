@@ -27,7 +27,7 @@ const LandingPage = () => {
                                 Hi all, I'm Davinder Kumar
                             </h1>
                             <p className="container-p">
-                                I'm passionate Full Stack web developer having an experience of web applications with Python, Django, React.js, Next.js and Blockchain development on Ethereum, Solidity, Web3.js, Moralis, and Brownie Framework.
+                                I'm passionate Full Stack web developer having an experience of web applications with React.js, Express.js and Nodejs Frameworks.
                             </p>
                             <div className="social-links">
                                 {Icons.map((icon) => (

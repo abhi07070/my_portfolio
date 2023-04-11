@@ -7,7 +7,6 @@
 
 .project-detail .header {
     display: flex;
-    /* flex-direction: column; */
     gap: 20px;
     font-size: 1.2rem;
     color: var(--white);
@@ -33,9 +32,11 @@
     display: flex;
     margin-top: 60px;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .project-wrap .wrapper {
+    width: calc(50% - 1.5rem);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -44,11 +45,6 @@
     background-color: var(--white);
     padding: 3rem 2rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
-
-}
-
-.project-wrap .wrapper p {
-    text-align: start;
 }
 
 .btns {
@@ -101,4 +97,14 @@
 
 .btns .demo svg {
     height: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+    .project-wrap {
+        flex-wrap: wrap;
+    }
+
+    .project-wrap .wrapper {
+        width: 100%;
+    }
 }

@@ -32,17 +32,18 @@
     display: flex;
     margin-top: 60px;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .experience-wrap .wrapper {
+    width: calc(50% - 1.5rem);
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
     align-items: center;
     gap: .5rem;
     background-color: var(--white);
-    padding: 3rem 2rem;
+    padding: 2rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 
 }
@@ -76,4 +77,14 @@ h3 {
 
 .experience-wrap .wrapper .logo img {
     height: 50px;
+}
+
+@media screen and (max-width: 1020px) {
+    .experience-wrap {
+        flex-wrap: wrap;
+    }
+
+    .experience-wrap .wrapper {
+        width: 100%;
+    }
 }

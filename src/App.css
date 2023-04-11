@@ -16,7 +16,7 @@ body {
   overflow-x: hidden;
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--black);
 }
@@ -52,15 +52,7 @@ html {
   .skills-wrapper {
     flex-direction: column;
   }
-
-  .experience-wrap {
-    flex-direction: column;
-  }
-
-  .project-wrap {
-    flex-direction: column;
-  }
-
+  
   .footer-details .details {
     flex-direction: column;
   }

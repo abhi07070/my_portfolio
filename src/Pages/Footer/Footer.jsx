@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="footer-right">
             <h1>Reach Out to me!</h1>
             <h2>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL</h2>
-            <p>Full Stack Web Developer & Blockchain Developer</p>
+            <p>Full Stack Web Developer</p>
             <div className="footer-btn">
               <button>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
