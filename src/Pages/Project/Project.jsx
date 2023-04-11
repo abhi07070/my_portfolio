@@ -1,8 +1,9 @@
 import React from 'react'
 import './Project.css'
-import { experience } from '../../components/Experience';
+// import { experience } from '../../components/Experience';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { project } from '../../components/Project';
 
 const Project = () => {
     return (
@@ -15,18 +16,23 @@ const Project = () => {
                     <h1>Project</h1>
                 </div>
                 <div className="project-wrap">
-                    {experience.map((data) => (
+                    {project.map((data) => (
                         <div className="wrapper">
-                            <h1>{data.header}</h1>
-                            <p>{data.para}</p>
+                            <h1>{data.name}</h1>
+                            <p>{data.desc}</p>
+                            <span><b>Skills: </b>{data.skills}</span>
                             <div className="btns">
-                                <FontAwesomeIcon className='git-btn' icon={faGithub} />
-                                <div className="demo demo-btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                    </svg>
-                                    <h4>Demo</h4>
-                                </div>
+                                <a href={data.link} target='_blank' rel="noopener noreferrer">
+                                    <FontAwesomeIcon className='git-btn' icon={faGithub} />
+                                </a>
+                                {data.demo !== '' &&
+                                    <div className="demo demo-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                        </svg>
+                                        <h4>Demo</h4>
+                                    </div>
+                                }
                             </div>
                         </div>
                     ))}

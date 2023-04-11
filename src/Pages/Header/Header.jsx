@@ -28,14 +28,14 @@ const Header = () => {
                 <div className="links">
                     {!isOpen ? (
                         Icons.map((name) => (
-                            <a className="link" href={name.link} key={name}>
+                            <a className="link" href={name.link} key={name} target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={name.icon} />
                             </a>
                         ))
                     ) : (
                         Icons.map((name) => (
                             <div className="link-name" key={name}>
-                                <a href={name.link}>
+                                <a href={name.link} target='_blank' rel="noopener noreferrer">
                                     <FontAwesomeIcon className="link" icon={name.icon} />
                                     {name.name}
                                 </a>

@@ -38,6 +38,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    flex-basis: 50%;
     align-items: center;
     gap: .5rem;
     background-color: var(--white);
@@ -67,11 +68,12 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: 50px;
+    margin-bottom: 10px;
     border-radius: 60px;
-    background-color: black;
+    background-color: var(--white);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
 .experience-wrap .wrapper .logo img {
-    height: 20px;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    height: 50px;
 }

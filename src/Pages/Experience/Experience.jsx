@@ -20,7 +20,10 @@ const Experience = () => {
                             <h1>{data.header}</h1>
                             <h2>{data.subHeader}</h2>
                             <h3>{data.subTitleHeader}</h3>
-                            <p>{data.para}</p>
+                            {/* <ol> */}
+                                <li>{data.para1}</li>
+                                <li>{data.para2}</li>
+                            {/* </ol> */}
                         </div>
                     ))}
 
