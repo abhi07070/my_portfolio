@@ -40,9 +40,9 @@
     position: relative;
     display: block;
     height: 100%;
+    transition: width 1s ease-in-out;
     border-radius: 6px;
     background: var(--body);
-    /* background: var(--blue); */
 }
 
 .skill-per .tooltip {
@@ -69,6 +69,6 @@
     transform: translateX(-50%) rotate(45deg);
 }
 
-.image img{
-   width: 100%;
+.image img {
+    width: 100%;
 }

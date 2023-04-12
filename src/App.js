@@ -23,7 +23,7 @@ function App() {
     <div>
       {loading ? (
         <div className='App'>
-        <HashLoader color={"#1171ef"} loading={loading} size={30} />
+          <HashLoader color={"#1171ef"} loading={loading} size={30} />
         </div>
       ) : (
         <>

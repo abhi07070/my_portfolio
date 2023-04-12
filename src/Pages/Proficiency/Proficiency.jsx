@@ -1,10 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Proficiency.css';
-import gif from '../../Images/developer-dark.3f07bd13.svg'
+import gif from '../../Images/developer-dark.3f07bd13.svg';
+
+const FRONTEND_SKILL = '90%';
+const BACKEND_SKILL = '70%';
+const PROGRAMMING_SKILL = '60%';
 
 const Proficiency = () => {
-    const [tooltipValues, setTooltipValues] = useState(['90%', '70%', '60%']);
-    const name = ['FRONTEND', 'BACKEND', 'PROGRAMMING']
+    const myref = useRef();
+    const [myElementIsVisible, setMyElementIsVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            setMyElementIsVisible(entry.isIntersecting);
+        });
+        observer.observe(myref.current);
+        // cleanup function for observer
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
+
+    const [tooltipValues, setTooltipValues] = useState([FRONTEND_SKILL, BACKEND_SKILL, PROGRAMMING_SKILL]);
+    const name = ['FRONTEND', 'BACKEND', 'PROGRAMMING'];
+
     const handleTooltipChange = (index, value) => {
         const newTooltipValues = [...tooltipValues];
         newTooltipValues[index] = value;
@@ -13,7 +32,14 @@ const Proficiency = () => {
 
     const getSkillPerWidth = (value) => {
         const tooltipValueNumber = Number(value.replace('%', ''));
-        return `${tooltipValueNumber}%`;
+        const defaultWidth = '0%';
+        // Set the width to 0% by default
+        let width = defaultWidth;
+        // If the element is visible, update the width
+        if (myElementIsVisible) {
+            width = `${tooltipValueNumber}%`;
+        }
+        return width;
     };
 
     return (
@@ -26,6 +52,7 @@ const Proficiency = () => {
                             <span className="title">{name[index]}</span>
                             <div className="skill-bar">
                                 <span
+                                    ref={myref}
                                     className="skill-per"
                                     style={{ width: getSkillPerWidth(value) }}
                                 >
@@ -45,7 +72,7 @@ const Proficiency = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Proficiency
+export default Proficiency;
