@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Proficiency.css';
-import gif from '../../Images/SvgLogo-unscreen.gif'
+import gif from '../../Images/developer-dark.3f07bd13.svg'
 
 const Proficiency = () => {
     const [tooltipValues, setTooltipValues] = useState(['90%', '70%', '60%']);
-const name = ['FRONTEND','BACKEND','PROGRAMMING']
+    const name = ['FRONTEND', 'BACKEND', 'PROGRAMMING']
     const handleTooltipChange = (index, value) => {
         const newTooltipValues = [...tooltipValues];
         newTooltipValues[index] = value;
@@ -16,7 +16,7 @@ const name = ['FRONTEND','BACKEND','PROGRAMMING']
         return `${tooltipValueNumber}%`;
     };
 
-    return ( 
+    return (
         <div className="section-lg">
             <div className="container">
                 <div className="skills-wrap">
@@ -41,7 +41,7 @@ const name = ['FRONTEND','BACKEND','PROGRAMMING']
                     ))}
                 </div>
                 <div className="image">
-                <img src={gif} alt="" />
+                    <img src={gif} alt="" />
                 </div>
             </div>
         </div>

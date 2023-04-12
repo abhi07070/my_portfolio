@@ -1,6 +1,7 @@
 import React from 'react';
 import './LandingPage.css';
 import Header from '../Header/Header';
+import img from '../../Images/Webdesigner.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Icons } from '../../components/Icons';
 
@@ -47,9 +48,9 @@ const LandingPage = () => {
                                     See My Resume</button>
                             </a>
                         </div>
-                        {/* <div className="right-side">
-                            <img src={gif} alt="" className='transparent-image' />
-                        </div> */}
+                        <div className="right-side">
+                            <img src={img} alt="" className='transparent-image' />
+                        </div>
                     </div>
                 </section>
             </div>
