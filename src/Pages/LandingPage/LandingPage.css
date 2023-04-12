@@ -133,7 +133,7 @@ main {
 
 .container-h {
     color: var(--white);
-    font-size: 2.2rem;
+    font-size: 2.1rem;
 }
 
 .container-p {
@@ -230,14 +230,15 @@ main {
 }
 
 @media (max-width: 820px) {
-    
+
     html {
-        font-size: 90.5%;
+        font-size: 80.5%;
     }
-    
+
     .header-container {
         flex-direction: column;
     }
+
     .right-side img {
         height: 200px;
     }
@@ -246,8 +247,12 @@ main {
 
 @media (max-width: 500px) {
 
-    html {
-        font-size: 75.5%;
+    .container-h {
+        font-size: 1.6rem;
+    }
+
+    .container-p {
+        font-size: 1.2rem;
     }
 
 }

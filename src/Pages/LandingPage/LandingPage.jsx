@@ -4,6 +4,13 @@ import Header from '../Header/Header';
 import img from '../../Images/Webdesigner.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Icons } from '../../components/Icons';
+import Typed from 'react-typed';
+
+const strings = [
+    "Davinder Kumar",
+    "a front-end developer",
+    "a back-end developer"
+]
 
 const LandingPage = () => {
     return (
@@ -25,7 +32,13 @@ const LandingPage = () => {
                     <div className="header-container">
                         <div className="left-side">
                             <h1 className="container-h">
-                                Hi all, I'm Davinder Kumar
+                                Hi all, I'm {' '}
+                                <Typed
+                                    strings={strings}
+                                    typeSpeed={80}
+                                    backSpeed={60}
+                                    loop
+                                />
                             </h1>
                             <p className="container-p">
                                 I'm passionate Full Stack web developer having an experience of web applications with React.js, Express.js and Nodejs Frameworks.
