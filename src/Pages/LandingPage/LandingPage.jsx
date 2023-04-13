@@ -5,6 +5,7 @@ import img from '../../Images/Webdesigner.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Icons } from '../../components/Icons';
 import Typed from 'react-typed';
+import { motion } from 'framer-motion';
 
 const strings = [
     "Davinder Kumar",
@@ -30,7 +31,12 @@ const LandingPage = () => {
                         <span></span>
                     </div>
                     <div className="header-container">
-                        <div className="left-side">
+                        <motion.div
+                            animate={{ x: 0 }}
+                            initial={{ x: -200 }}
+                            transition={{type:'spring',duration:2,bounce:0.3}}
+                            className="left-side"
+                        >
                             <h1 className="container-h">
                                 Hi all, I'm {' '}
                                 <Typed
@@ -60,7 +66,7 @@ const LandingPage = () => {
                                     </span>
                                     See My Resume</button>
                             </a>
-                        </div>
+                        </motion.div>
                         <div className="right-side">
                             <img src={img} alt="" className='transparent-image' />
                         </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Header.css';
 import { Icons } from '../../components/Icons';
+import { motion } from 'framer-motion';
 
 const Header = () => {
 
@@ -34,12 +35,17 @@ const Header = () => {
                         ))
                     ) : (
                         Icons.map((name) => (
-                            <div className="link-name" key={name}>
-                                <a href={name.link} target='_blank' rel="noopener noreferrer">
+                            <motion.div className="link-name" key={name}
+                                animate={{ x: !isOpen ? 200 : 5 }}
+                                transition={{ type: 'spring', duration: 4, bounce: 0.7 }}
+
+                            >
+                                <a
+                                    href={name.link} target='_blank' rel="noopener noreferrer">
                                     <FontAwesomeIcon className="link" icon={name.icon} />
                                     {name.name}
                                 </a>
-                            </div>
+                            </motion.div>
                         ))
                     )}
                 </div>

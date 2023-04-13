@@ -3,23 +3,17 @@
     margin-bottom: 6rem;
     background: linear-gradient(35deg, #11cdef, #1171ef) !important;
     position: relative;
-    clip-path: polygon(0 0, 100% 0%, 100% 94%, 0% 100%);
+    /* clip-path: polygon(0 0, 100% 0%, 100% 94%, 0% 100%); */
     width: 100%;
     height: 50vh;
-    z-index: -100;
+    z-index: 0;
 }
 
 .education-container {
-    display: flex;
     max-width: 1000px;
     margin: 0 auto;
-    /* background: linear-gradient(35deg, #11cdef, #1171ef) !important; */
-    flex-direction: column;
-    justify-content: start;
     height: 50vh;
 }
-
-.education-details {}
 
 .header {
     display: flex;
@@ -27,6 +21,10 @@
     font-size: 1.2rem;
     color: var(--white);
     align-items: center;
+}
+
+.header .h1 {
+    color: var(--white);
 }
 
 .header svg {
@@ -41,27 +39,51 @@
 .education-box {
     max-width: 500px;
     width: 100%;
-    height: 50vh;
-    /* position: absolute;
-    bottom: 0; */
+    height: 45vh;
     display: flex;
     flex-direction: column;
     align-items: start;
-    /* justify-content: start; */
-    padding: 30px;
+    margin-top: 30px;
+    padding: 2rem;
     background-color: var(--white);
-    z-index: 10000;
-    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
-.education-box .p{
-    padding:2px 0;
+.education-box .p {
+    padding: 2px 0;
 }
 
-.education-box .spans{
+.education-box .spans {
     padding: 4px 0;
 }
 
-.education-box span{
-    padding: 4px 0;
+.education-box .spans span {
+    margin-right: 7px;
+}
+
+.education-box .spans span:nth-child(1) {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 1px 2px;
+    border-radius: 3px;
+}
+.education-box .spans span:nth-child(2) {
+    background-color: var(--body);
+    color: var(--white);
+    padding: 1px 2px;
+    border-radius: 3px;
+}
+
+@media (max-width: 1020px) {
+
+    .education-container {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .education-box {
+        max-width: 1020px;
+        align-items: center;
+    }
+
 }

@@ -16,7 +16,7 @@ body {
   overflow-x: hidden;
 }
 
-.App{
+.App {
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -26,6 +26,10 @@ body {
 a {
   text-decoration: none;
   color: var(--black);
+}
+
+li{
+  text-align: center;
 }
 
 :root {
@@ -52,14 +56,10 @@ html {
     padding: 0 3rem 0 3rem;
   }
 
-  .education-container {
-    padding: 0 1rem 0 1rem;
-  }
-
   .skills-wrapper {
     flex-direction: column;
   }
-  
+
   .footer-details .details {
     flex-direction: column;
   }
@@ -87,6 +87,10 @@ html {
 
   .education-container {
     padding: 0 1rem 0 1rem;
+  }
+
+  .header {
+    justify-content: center;
   }
 
 }

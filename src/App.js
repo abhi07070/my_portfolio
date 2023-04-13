@@ -8,12 +8,13 @@ import LandingPage from './Pages/LandingPage/LandingPage';
 import Proficiency from './Pages/Proficiency/Proficiency';
 import Project from './Pages/Project/Project';
 import HashLoader from "react-spinners/HashLoader";
+import Education from './Pages/Education/Education';
 
 function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
+    // setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 6000);
@@ -30,7 +31,7 @@ function App() {
           <LandingPage />
           <About />
           <Proficiency />
-          {/* <Education/> */}
+          <Education />
           <Experience />
           <Project />
           <Contact />

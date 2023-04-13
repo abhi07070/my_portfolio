@@ -23,8 +23,10 @@ const Footer = () => {
             </div>
             <div className="social-links">
               {Icons.map((icon) => (
-                <div className="social-link social-link-animation" style={{ backgroundColor: icon.BGcolor, border: icon }}>
-                  <FontAwesomeIcon icon={icon.icon} />
+                <div className="social-link social-link-animation" style={{ backgroundColor: icon.BGcolor, border: icon }} key={icon.name}>
+                  <a style={{ color: '#fff' }} href={icon.link} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={icon.icon} title={icon.name} />
+                  </a>
                 </div>
               ))}
             </div>
