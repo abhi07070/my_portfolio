@@ -12,7 +12,7 @@ const Education = () => {
     useEffect(() => {
         if (inView) {
             animation.start({
-                scale: 1.0,
+                scale: 0.9,
                 transition: {
                     type: 'spring',
                     duration: 2,

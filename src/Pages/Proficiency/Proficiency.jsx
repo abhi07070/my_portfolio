@@ -15,7 +15,6 @@ const Proficiency = () => {
             setMyElementIsVisible(entry.isIntersecting);
         });
         observer.observe(myref.current);
-        // cleanup function for observer
         return () => {
             observer.disconnect();
         };
