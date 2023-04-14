@@ -46,9 +46,9 @@ const Education = () => {
                         <span>September 2020 -May 2024</span>
                         <span>Grade A</span>
                     </div>
-                    <p>Participated in research of XXX and published 3 papers.</p>
+                    {/* <p>Participated in research of XXX and published 3 papers.</p>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, deserunt?</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, deserunt?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, deserunt?</li> */}
                 </motion.div>
             </div>
         </section>

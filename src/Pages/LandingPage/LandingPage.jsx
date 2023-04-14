@@ -68,7 +68,7 @@ const LandingPage = () => {
                             </a>
                         </motion.div>
                         <div className="right-side">
-                            <img src={img} alt="" className='transparent-image' />
+                            <img src={img} alt="" />
                         </div>
                     </div>
                 </section>
