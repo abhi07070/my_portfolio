@@ -39,6 +39,8 @@ li{
   --body: #525f7f;
   --green: #2dce89;
   --navy-blue: #11cdef;
+  --box-shadow:0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  --bg-col:linear-gradient(35deg, #11cdef, #1171ef) !important;
 }
 
 html {

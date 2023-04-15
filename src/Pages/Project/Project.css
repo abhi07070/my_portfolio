@@ -25,7 +25,7 @@
     color: var(--navy-blue);
     padding: 9px;
     border-radius: 50%;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    box-shadow: var(--box-shadow);
 }
 
 .project-wrap {
@@ -44,7 +44,7 @@
     gap: .5rem;
     background-color: var(--white);
     padding: 3rem 2rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    box-shadow: var(--box-shadow);
 }
 
 .btns {

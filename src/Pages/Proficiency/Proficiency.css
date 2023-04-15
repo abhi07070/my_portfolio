@@ -45,22 +45,6 @@
     background: var(--body);
 }
 
-/* .skill-bar .skill-per {
-    width: 0%;
-}
-
-.skill-box:nth-child(1) .skill-per {
-    width: 90%;
-}
-
-.skill-box:nth-child(2) .skill-per {
-    width: 70%;
-}
-
-.skill-box:nth-child(3) .skill-per {
-    width: 60%;
-} */
-
 .skill-per .tooltip {
     position: absolute;
     top: -28px;

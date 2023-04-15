@@ -1,7 +1,7 @@
 .footer-details {
     width: 100%;
     /* height: 100vh; */
-    background: linear-gradient(35deg, #11cdef, #1171ef) !important;
+    background: var(--bg-col);
     padding: 3rem;
 }
 

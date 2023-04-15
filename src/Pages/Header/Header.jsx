@@ -4,6 +4,7 @@ import './Header.css';
 import { Icons } from '../../components/Icons';
 import { motion } from 'framer-motion';
 
+
 const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Header = () => {
     }, [])
 
     return (
-        <header className='color'>
+        <header>
             <nav className={isOpen ? 'mobile' : 'nav-header'}>
                 <div className="logo">
                     <h2>Davinder Kumar</h2>

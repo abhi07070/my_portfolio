@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Proficiency.css';
 import gif from '../../Images/developer-dark.3f07bd13.svg';
+import Fade from 'react-reveal/Fade';
 
 const FRONTEND_SKILL = '90%';
 const BACKEND_SKILL = '70%';
@@ -44,31 +45,35 @@ const Proficiency = () => {
     return (
         <div className="section-lg">
             <div className="container">
-                <div className="skills-wrap">
-                    <h1 className="ph1">Proficiency</h1>
-                    {tooltipValues.map((value, index) => (
-                        <div className="skill-box" key={index}>
-                            <span className="title">{name[index]}</span>
-                            <div className="skill-bar">
-                                <span
-                                    ref={myref}
-                                    className="skill-per"
-                                    style={{ width: getSkillPerWidth(value) }}
-                                >
+                <Fade left>
+                    <div className="skills-wrap">
+                        <h1 className="ph1">Proficiency</h1>
+                        {tooltipValues.map((value, index) => (
+                            <div className="skill-box" key={index}>
+                                <span className="title">{name[index]}</span>
+                                <div className="skill-bar">
                                     <span
-                                        className="tooltip"
-                                        onClick={(e) => handleTooltipChange(index, e.target.innerText)}
+                                        ref={myref}
+                                        className="skill-per"
+                                        style={{ width: getSkillPerWidth(value) }}
                                     >
-                                        {value}
+                                        <span
+                                            className="tooltip"
+                                            onClick={(e) => handleTooltipChange(index, e.target.innerText)}
+                                        >
+                                            {value}
+                                        </span>
                                     </span>
-                                </span>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
-                <div className="image">
-                    <img src={gif} alt="" />
-                </div>
+                        ))}
+                    </div>
+                </Fade>
+                <Fade right>
+                    <div className="image">
+                        <img src={gif} alt="" />
+                    </div>
+                </Fade>
             </div>
         </div>
     );
