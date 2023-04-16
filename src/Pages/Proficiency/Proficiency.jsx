@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Proficiency.css';
-import gif from '../../Images/developer-dark.3f07bd13.svg';
+import gif from '../../Images/developer.svg';
 import Fade from 'react-reveal/Fade';
 
 const FRONTEND_SKILL = '90%';
