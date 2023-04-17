@@ -182,7 +182,7 @@ main {
 .btn {
     will-change: transform;
     letter-spacing: .025em;
-    font-size: .875rem;
+    font-size: .775rem;
     color: #212529;
     width: 11rem;
     background-color: var(--white);
