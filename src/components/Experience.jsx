@@ -13,9 +13,9 @@ export const experience = [
         img: logo2,
         header: "Coding Ninja",
         subHeader: "Teaching Assistant",
-        subTitleHeader: "Dec 2022 - Present",
+        subTitleHeader: "Dec 2022 - May 2023",
         para1: "My role is to mentor, assist students and solve their queries.",
-        para2: " I am accountable for taking doubt sessions on Data structures and OOPs concepts.",
+        para2: "I have mentored around 1115 students with Avg rating 4.4 out of 5.",
     },
 
 ];
