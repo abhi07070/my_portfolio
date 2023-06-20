@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Icons } from '../../components/Icons';
-import profile from '../../Images/profile.jpg'
+import profile from '../../Images/me.png'
 
 const Footer = () => {
   return (
