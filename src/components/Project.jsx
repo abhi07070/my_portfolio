@@ -1,6 +1,6 @@
 export const project = [
   {
-    name: "Developer’s Portfolio",
+    name: "RetireExpert",
     desc: "Software Developer Portfolio Template built with react.js that helps you showcase your work and skills as a software developer.",
     skill: "ReactJs",
     link: "https://github.com/abhi07070/my_portfolio",

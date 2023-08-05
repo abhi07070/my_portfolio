@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { project } from "../../components/Project";
 import Fade from "react-reveal/Fade";
+import img from "../../Images/dashboard.png";
+import Blog from "../../Images/Blog.png";
+import Ecommerce from "../../Images/ecommerce.png";
 
 const Project = () => {
   return (
@@ -29,9 +32,9 @@ const Project = () => {
             <h1>Project</h1>
           </div>
           <div className="project-wrap">
-            {project.map((data) => (
-              <div className="wrapper">
-                <h1>{data.name}</h1>
+            {/* {project.map((data) => ( */}
+            {/* <div className="wrapper"> */}
+            {/* <h1>{data.name}</h1>
                 <p>{data.desc}</p>
                 <span>
                   <b>Skills: </b>
@@ -66,9 +69,65 @@ const Project = () => {
                       </div>
                     </a>
                   )}
-                </div>
+                </div> */}
+            {/* </div> */}
+            {/* ))} */}
+            <div className="wrap">
+              <h1>RetireExpert</h1>
+              <img src={img} alt="" />
+              <div className="btns">
+                <a
+                  href="https://github.com/abhi07070/MockUp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="github">
+                    <i class="bx bxl-github"></i>
+                  </div>
+                </a>
+
+                <a
+                  href="https://abhi07070.github.io/MockUp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="demo demo-btn">
+                    <i class="bx bx-right-arrow-alt"></i>
+                    <span>Demo</span>
+                  </div>
+                </a>
               </div>
-            ))}
+            </div>
+            <div className="wrap">
+              <h1>Blog Application</h1>
+              <img src={Blog} alt="" />
+              <div className="btns">
+                <a
+                  href="https://github.com/abhi07070/Mern_blog-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="github">
+                    <i class="bx bxl-github"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div className="wrap">
+              <h1>E-commerce Application</h1>
+              <img src={Ecommerce} alt="" />
+              <div className="btns">
+                <a
+                  href="https://github.com/abhi07070/E-commerce-Backend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="github">
+                    <i class="bx bxl-github"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </Fade>
       </div>
