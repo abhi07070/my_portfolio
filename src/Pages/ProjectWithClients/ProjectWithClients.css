@@ -1,11 +1,11 @@
-.project-detail {
+.project-client-detail {
   margin: 0 auto;
   max-width: 1000px;
   width: 100%;
   padding: 5rem 3rem;
 }
 
-.project-detail .header {
+.project-client-detail .header {
   display: flex;
   gap: 20px;
   font-size: 1.2rem;
@@ -13,12 +13,12 @@
   align-items: center;
 }
 
-.header h1 {
+.project-client-detail .header h1 {
   font-size: var(--header);
   color: var(--navy-blue);
 }
 
-.header svg {
+.project-client-detail .header svg {
   width: 50px;
   height: 50px;
   background-color: var(--white);
@@ -28,43 +28,37 @@
   box-shadow: var(--box-shadow);
 }
 
-.project-wrap {
-  display: flex;
-  margin-top: 60px;
-  gap: 3rem;
-  flex-wrap: wrap;
-}
-
-.project-wrap .wrap h1 {
+.project-client-detail .client-project-wrap .wrap h1 {
   padding: 0 0 1rem 0;
   color: #000;
 }
 
-.project-wrap .wrap {
-  width: calc(50% - 1.5rem);
-  text-align: center;
+.project-client-detail .wrap {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  margin-top: 60px;
+  /* padding: 3rem; */
+  gap: 3rem;
+}
 
-  background-color: var(--white);
-  padding: 2rem;
+.project-client-detail .wrap img {
+  max-width: 600px;
+  width: 100%;
+  /* height: 00px; */
+  /* height: 300px; */
+
   box-shadow: var(--box-shadow);
 }
 
-.project-wrap .wrap img {
-  height: 200px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.btns {
+/* .project-client-detail .btns {
   display: flex;
   margin-top: 15px;
-}
+} */
 
-.btns .github {
+/* .project-client-detail .btns .github {
   color: #fff;
   background-color: #222;
   border-color: #222;
@@ -78,9 +72,9 @@
   line-height: 1.5;
   border-radius: 0.25rem;
   cursor: pointer;
-}
+} */
 
-.btns .demo {
+/* .project-client-detail .live-btn {
   margin-left: 8px;
   display: flex;
   align-items: center;
@@ -88,9 +82,9 @@
   color: #fff;
   background-color: var(--navy-blue);
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-}
+} */
 
-.demo-btn {
+.project-client-detail .live-btn {
   color: #fff;
   background-color: #222;
   border-color: #222;
@@ -107,15 +101,15 @@
 }
 
 @media screen and (max-width: 1020px) {
-  .project-wrap .wrap {
+  .client-project-wrap .wrap {
     width: 100%;
   }
 
-  .project-wrap {
+  .client-project-wrap {
     flex-wrap: wrap;
   }
 
-  .project-wrap .wrap img {
+  .client-project-wrap .wrap img {
     width: 100%;
     height: auto;
   }

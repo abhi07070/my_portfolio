@@ -24,6 +24,8 @@
     "react-spinners": "^0.13.8",
     "react-text-loop": "^2.3.0",
     "react-typed": "^1.2.0",
+    "swiper": "^10.3.1",
+    "swiper-bundle": "^0.0.1-security",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

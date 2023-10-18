@@ -45,11 +45,11 @@ const LandingPage = () => {
                   Frameworks.
                 </p>
                 <div className="social-links">
-                  {Icons.map((icon) => (
+                  {Icons.map((icon, index) => (
                     <div
                       className="social-link social-link-animation"
                       style={{ backgroundColor: icon.BGcolor, border: icon }}
-                      key={icon.name}
+                      key={index}
                     >
                       <a
                         style={{ color: "#fff" }}
